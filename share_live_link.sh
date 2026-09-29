@@ -21,4 +21,4 @@ fi
 echo "Starting public Cloudflare Tunnel..."
 echo "Anyone on any device or network can access this link:"
 echo ""
-cloudflared tunnel --url http://localhost:$PORT
+cloudflared tunnel --protocol http2 --url http://localhost:$PORT
