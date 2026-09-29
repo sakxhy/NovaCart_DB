@@ -4,3 +4,12 @@ __pycache__/
 *.pyd
 .DS_Store
 *.log
+
+# Personal Reference & Speaker Scripts (Not for public repo)
+*Speaker_Notes*
+*Workflow_Report*
+SPEAKER_NOTES*
+generate_speaker_notes*
+generate_pdf*
+app_backup.py
+
