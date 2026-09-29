@@ -404,34 +404,6 @@ with st.sidebar:
         st.success("Database restored to baseline records!")
         st.rerun()
 
-    # Download Workflow PDF Report
-    pdf_filename = "NovaCart_DBMS_IE_Workflow_Report.pdf"
-    if os.path.exists(pdf_filename):
-        with open(pdf_filename, "rb") as f:
-            pdf_bytes = f.read()
-        st.download_button(
-            label="📄 Download Workflow PDF Report",
-            data=pdf_bytes,
-            file_name=pdf_filename,
-            mime="application/pdf",
-            use_container_width=True,
-            help="Download the complete system workflow, EER architecture, and viva defense report as a PDF"
-        )
-
-    # Download 11-Speaker Notes & Stage Script PDF
-    speaker_pdf_filename = "NovaCart_DBMS_IE_Speaker_Notes_11_Members.pdf"
-    if os.path.exists(speaker_pdf_filename):
-        with open(speaker_pdf_filename, "rb") as f:
-            speaker_pdf_bytes = f.read()
-        st.download_button(
-            label="🎤 Download 11-Speaker Notes PDF",
-            data=speaker_pdf_bytes,
-            file_name=speaker_pdf_filename,
-            mime="application/pdf",
-            use_container_width=True,
-            help="Download the complete 11-speaker stage presentation script, narrative arc, and viva defense guide as a PDF"
-        )
-
 # --------------------------------------------------------------------------------------
 # 5. Top Header Banner (Light Theme)
 # --------------------------------------------------------------------------------------
